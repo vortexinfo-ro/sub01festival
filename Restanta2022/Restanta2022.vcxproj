@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CCantec.cpp" />
     <ClCompile Include="CChitara.cpp" />
     <ClCompile Include="CPian.cpp" />
     <ClCompile Include="CTrompeta.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CCantec.h" />
     <ClInclude Include="CChitara.h" />
     <ClInclude Include="CPian.h" />
     <ClInclude Include="CTrompeta.h" />
