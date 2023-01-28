@@ -141,7 +141,9 @@
   <ItemGroup>
     <ClCompile Include="CCantec.cpp" />
     <ClCompile Include="CChitara.cpp" />
+    <ClCompile Include="CFormatie.cpp" />
     <ClCompile Include="CPian.cpp" />
+    <ClCompile Include="CProgramMuzical.cpp" />
     <ClCompile Include="CTrompeta.cpp" />
     <ClCompile Include="CVioara.cpp" />
     <ClCompile Include="IInstrument.cpp" />
@@ -150,7 +152,9 @@
   <ItemGroup>
     <ClInclude Include="CCantec.h" />
     <ClInclude Include="CChitara.h" />
+    <ClInclude Include="CFormatie.h" />
     <ClInclude Include="CPian.h" />
+    <ClInclude Include="CProgramMuzical.h" />
     <ClInclude Include="CTrompeta.h" />
     <ClInclude Include="CVioara.h" />
     <ClInclude Include="IInstrument.h" />

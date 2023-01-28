@@ -1,9 +1,7 @@
 ﻿  CCantec.cpp
-  CChitara.cpp
-  CPian.cpp
-  CTrompeta.cpp
+  CProgramMuzical.cpp
   CVioara.cpp
-  IInstrument.cpp
   Source.cpp
   Generating Code...
+  LINK : D:\sub01festival\x64\Debug\Restanta2022.exe not found or not built by the last incremental link; performing full link
   Restanta2022.vcxproj -> D:\sub01festival\x64\Debug\Restanta2022.exe

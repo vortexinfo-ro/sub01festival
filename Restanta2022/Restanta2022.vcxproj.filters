@@ -36,6 +36,12 @@
     <ClCompile Include="CCantec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CProgramMuzical.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CFormatie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IInstrument.h">
@@ -54,6 +60,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CCantec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CProgramMuzical.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFormatie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

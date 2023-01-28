@@ -5,6 +5,8 @@
 #include"CChitara.h"
 #include"CTrompeta.h"
 #include"CVioara.h"
+#include"CCantec.h"
+#include"CProgramMuzical.h"
 using namespace std;
 
 int main()
@@ -17,5 +19,6 @@ int main()
 	pian.emite_sunet();
 	CTrompeta trompeta;
 	trompeta.emite_sunet();
+	CCantec cantec("AnaMaria", 100);
 	return 0;
 }
