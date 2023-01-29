@@ -14,6 +14,7 @@ using namespace std;
 
 int main()
 {
+	/*
 	CVioara vioara;
 	vioara.emite_sunet();
 	CChitara chitara;
@@ -22,9 +23,12 @@ int main()
 	pian.emite_sunet();
 	CTrompeta trompeta;
 	trompeta.emite_sunet();
+	*/
 
-
-	
+	CApp& app = CApp::getInstance();
+	app.show();
+	//sau
+	CApp::getInstance().show();
 
 	
 	

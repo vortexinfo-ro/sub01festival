@@ -4,9 +4,10 @@ class CApp
 {
 private:
 	CApp(){}
-	static CApp* instance;
+	//static CApp* instance;
 public:
 	static CApp& getInstance();
+	void show();
 
 };
 

@@ -1,14 +1,2 @@
-﻿  CApp.cpp
-  CCantec.cpp
-  CChitara.cpp
-  CFormatie.cpp
-  CFormatieMClasica.cpp
-  CPian.cpp
-  CProgramMuzical.cpp
-  CTrompeta.cpp
-  CVioara.cpp
-  IInstrument.cpp
-  Source.cpp
-  Generating Code...
-D:\sub01festival\Restanta2022\CApp.cpp(14): warning C4715: 'CApp::getInstance': not all control paths return a value
-  Restanta2022.vcxproj -> D:\sub01festival\x64\Debug\Restanta2022.exe
+﻿  Source.cpp
+  Restanta2022.vcxproj -> F:\scoala\Nicoleta Cucos\sub01festival\x64\Debug\Restanta2022.exe
