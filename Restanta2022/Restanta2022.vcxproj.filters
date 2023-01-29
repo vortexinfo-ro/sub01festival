@@ -42,6 +42,12 @@
     <ClCompile Include="CFormatie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CFormatieMClasica.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IInstrument.h">
@@ -66,6 +72,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CFormatie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFormatieMClasica.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

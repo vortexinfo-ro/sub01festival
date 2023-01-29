@@ -5,6 +5,7 @@ class CVioara :public IInstrument
 private:
 	int anul_productiei;
 public:
+	CVioara(){}
 	virtual void emite_sunet() override;
 };
 

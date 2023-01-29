@@ -10,6 +10,7 @@ private:
 	vector<CCantec> cantece;
 	int get_durata_totala();
 public:
-
+	CProgramMuzical(){}
+	friend istream& operator>>(istream& out, CProgramMuzical& data);
 };
 
