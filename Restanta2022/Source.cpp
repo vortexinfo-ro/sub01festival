@@ -25,12 +25,11 @@ int main()
 	trompeta.emite_sunet();
 	*/
 
-	CApp& app = CApp::getInstance();
-	app.show();
+	/*CApp& app = CApp::getInstance();
+	app.show();*/
 	//sau
-	CApp::getInstance().show();
+	CApp::getInstance().run();
 
-	
 	
 	return 0;
 }

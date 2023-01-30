@@ -8,9 +8,9 @@
 class CFormatieMClasica :public CFormatie
 {
 private:
-	vector<IInstrument> instrumente;
+	/*vector<IInstrument> instrumente;
+	CProgramMuzical program_muzical;*/
 public:
 	CFormatieMClasica() :CFormatie() {}
-
 };
 

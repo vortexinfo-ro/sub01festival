@@ -1,5 +1,8 @@
 #pragma once
-
+#include<vector>
+#include"CFormatie.h"
+#include"CFormatieMClasica.h"
+#include"CFormatieMPopulara.h"
 class CApp
 {
 private:
@@ -7,7 +10,8 @@ private:
 	//static CApp* instance;
 public:
 	static CApp& getInstance();
-	void show();
+	vector<CFormatie> formatii;
+	void run();
 
 };
 

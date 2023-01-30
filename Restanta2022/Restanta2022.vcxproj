@@ -144,6 +144,7 @@
     <ClCompile Include="CChitara.cpp" />
     <ClCompile Include="CFormatie.cpp" />
     <ClCompile Include="CFormatieMClasica.cpp" />
+    <ClCompile Include="CFormatieMPopulara.cpp" />
     <ClCompile Include="CPian.cpp" />
     <ClCompile Include="CProgramMuzical.cpp" />
     <ClCompile Include="CTrompeta.cpp" />
@@ -157,6 +158,7 @@
     <ClInclude Include="CChitara.h" />
     <ClInclude Include="CFormatie.h" />
     <ClInclude Include="CFormatieMClasica.h" />
+    <ClInclude Include="CFormatieMPopulara.h" />
     <ClInclude Include="CPian.h" />
     <ClInclude Include="CProgramMuzical.h" />
     <ClInclude Include="CTrompeta.h" />

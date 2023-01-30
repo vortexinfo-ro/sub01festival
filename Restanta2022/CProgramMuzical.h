@@ -8,9 +8,13 @@ class CProgramMuzical
 {
 private:
 	vector<CCantec> cantece;
-	int get_durata_totala();
+	int durata_totala;
 public:
-	CProgramMuzical(){}
-	friend istream& operator>>(istream& out, CProgramMuzical& data);
+	CProgramMuzical():durata_totala(0){}
+	vector<CCantec> stabilire_cantece(CCantec&);
+	int get_durata_totala();
+	vector<CCantec> return_cantece();
+	void afisare_cantece();
+	friend istream& operator<<(istream& out, vector<CCantec>& data);
 };
 
