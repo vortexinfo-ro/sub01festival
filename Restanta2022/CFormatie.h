@@ -15,13 +15,19 @@ private:
 	vector<IInstrument*> instrumente;
 	vector<IInstrument*> instrumente1;
 	CProgramMuzical* program_muzical_m_clasica;
+	//dd
+	vector<IInstrument*> instruments;
+
 public:
-	CFormatie(){}
+	CFormatie(); // {}
 	void set_denumire(string den);
 	string get_denumire();
 	vector<IInstrument*> set_instrumente_m_clasica();
 	vector<IInstrument*> set_instrumente_m_populara();
 	CProgramMuzical* program_muzical();
-
+	//dd
+	size_t add_instrument(IInstrument *inst);
+	size_t set_instruments();
+	vector<IInstrument*> get_instruments();
 };
 

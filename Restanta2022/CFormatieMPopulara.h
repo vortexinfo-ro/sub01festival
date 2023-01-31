@@ -5,6 +5,6 @@ class CFormatieMPopulara :public CFormatie
 private:
 
 public:
-	CFormatieMPopulara():CFormatie(){}
+	CFormatieMPopulara() :CFormatie() { cout << "CFormatieMPopulara()" << endl; }
 };
 
