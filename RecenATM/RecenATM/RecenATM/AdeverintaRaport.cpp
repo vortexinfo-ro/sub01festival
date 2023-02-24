@@ -1,0 +1,1 @@
+#include "AdeverintaRaport.h"
