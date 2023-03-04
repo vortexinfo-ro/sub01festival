@@ -1,2 +1,7 @@
-﻿  Source.cpp
-  RecenATM.vcxproj -> D:\RecenATM\RecenATM\Debug\RecenATM.exe
+﻿  Agent.cpp
+  Controlor.cpp
+  RecenApp.cpp
+  Recenzor.cpp
+  Source.cpp
+  Generating Code...
+  RecenATM.vcxproj -> D:\sub01festival\RecenATM\Debug\RecenATM.exe

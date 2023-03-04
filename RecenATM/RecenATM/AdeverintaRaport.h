@@ -7,6 +7,6 @@ private:
 	int ID_agent;
 	int nr_formulare;
 public:
-	AdeverintaRaport();
+	AdeverintaRaport() {}
 };
 

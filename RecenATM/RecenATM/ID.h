@@ -3,10 +3,12 @@
 class ID
 {
 private:
-	static int Id;
+	int Id;
 public:
 	ID(){}
+	void set_srand();
 	void set_ID();
 	int get_ID();
 	~ID();
 };
+ 

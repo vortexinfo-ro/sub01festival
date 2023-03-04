@@ -4,6 +4,6 @@ class FormularRecenzare :public Formular
 {
 
 public:
-	FormularRecenzare();
+	FormularRecenzare() {}
 };
 

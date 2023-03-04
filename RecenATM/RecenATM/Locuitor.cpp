@@ -1,6 +1,11 @@
 #include "Locuitor.h"
 
-//list<FormularRecenzare> Locuitor::return_formulare_recenzare()
-//{
-//    return formulare_recenzare;
-//}
+void Locuitor::set_nume(string nume)
+{
+	this->nume = nume;
+}
+
+string Locuitor::get_nume()
+{
+	return this->nume;
+}

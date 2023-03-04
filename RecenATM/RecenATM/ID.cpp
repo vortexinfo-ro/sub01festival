@@ -2,11 +2,14 @@
 #include<iostream>
 #include<time.h>
 
-int ID::Id = 0;
+ 
+void ID::set_srand()
+{
+	srand((unsigned int)time(NULL));
+}
 
 void ID::set_ID()
 {
-	srand(time(NULL));
 	int random_number;
 	random_number = rand();
 	this->Id= random_number;

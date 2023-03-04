@@ -4,13 +4,14 @@
 using namespace std;
 class Recenzor :public IUtilizator
 {
-private:
+protected:
 	ID id;
 public:
 	Recenzor()
 	{
 		id.set_ID();
-		cout << id.get_ID()<<endl;
+		cout << id.get_ID() << endl;
 	}
+	ID return_ID();
 };
 
