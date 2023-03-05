@@ -15,9 +15,15 @@ private:
 	RecenApp() {}
 public:
 	static RecenApp& getInstance();
+
 	list<IUtilizator> Utilizator;
 	list<IUtilizator> return_list_utilizatori(IUtilizator u);
 	void initializare_utilizatori();
+	
 	void run();
+	//dd
+	void initUsers();
+	size_t addUser(IUtilizator &u);
+	list<IUtilizator> getUsersList();
 };
 
