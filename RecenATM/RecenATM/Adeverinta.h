@@ -7,7 +7,7 @@ class Adeverinta
 protected:
 
 public:
-	Adeverinta();
+	Adeverinta() {}
 	virtual void afisare_intuitiva();
 };
 

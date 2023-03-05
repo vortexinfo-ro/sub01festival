@@ -14,6 +14,8 @@ private:
 public:
 	Locuitor() {}
 	Locuitor(string nume, string prenume) :nume(nume), prenume(prenume) {};
-    //list<FormularRecenzare> return_formulare_recenzare();
+	void set_nume(string nume);
+	string get_nume();
+   
 };
 

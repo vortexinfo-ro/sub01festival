@@ -10,7 +10,7 @@ private:
 	list<FormularRecenzare> formulare_recenzare;
 	list<AdeverintaRecenzare> adeverinte_recenzare;
 public:
-	Agent();
-	Agent(string nume, string prenume) :nume(nume), prenume(prenume) {}
+	Agent() {}
+	Agent(string nume, string prenume):nume(nume),prenume(prenume){}
 };
 

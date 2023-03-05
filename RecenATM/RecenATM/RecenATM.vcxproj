@@ -171,6 +171,11 @@
     <ClInclude Include="RecenApp.h" />
     <ClInclude Include="Recenzor.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="agenti.csv" />
+    <None Include="controlori.csv" />
+    <None Include="locuitori.csv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -10,7 +10,7 @@ private:
 	list<FormularCentralizator> lista_centralizatoare;
 	list<AdeverintaRaport> lista_rapoarte;
 public:
-	Controlor();
-	Controlor(string nume, string prenume) :nume(nume), prenume(prenume) {}
+	Controlor() {}
+	Controlor(string nume, string prenume) :nume(nume), prenume(prenume) { }
 };
 

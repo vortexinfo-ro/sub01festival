@@ -7,6 +7,6 @@ private:
 	int ID_agent;
 	int ID_formular_recenzare;
 public:
-	AdeverintaRecenzare();
+	AdeverintaRecenzare() {}
 };
 

@@ -9,6 +9,6 @@ private:
 	list<FormularRecenzare> lista_formulare_recenzare;
 
 public:
-	FormularCentralizator();
+	FormularCentralizator() {}
 };
 
