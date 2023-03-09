@@ -6,65 +6,10 @@ RecenApp& RecenApp::getInstance()
 	return instance;
 }
 
-list<IUtilizator> RecenApp::return_list_utilizatori(IUtilizator u)
-{
-	Utilizator.push_back(u);
-	return Utilizator;
-}
-void RecenApp::initializare_utilizatori()
-{
-	string nume;
-	string prenume;
-	ifstream myFile;
-	myFile.open("locuitori.csv");
-	while (myFile.good())
-	{
-		getline(myFile, nume, ',');
-		getline(myFile, prenume, ',');
-		Locuitor L1(nume, prenume);
-		RecenApp::return_list_utilizatori(L1);
-		getline(myFile, nume, ',');
-		getline(myFile, prenume, ',');
-		Locuitor L2(nume, prenume);
-		RecenApp::return_list_utilizatori(L2);
-	}
-	myFile.close();
-	myFile.open("agenti.csv");
-	while (myFile.good())
-	{
-		getline(myFile, nume, ',');
-		getline(myFile, prenume, ',');
-		Agent A1(nume, prenume);
-		RecenApp::return_list_utilizatori(A1);
-		getline(myFile, nume, ',');
-		getline(myFile, prenume, ',');
-		Agent A2(nume, prenume);
-		RecenApp::return_list_utilizatori(A2);
-	}
-	myFile.close();
-	myFile.open("controlori.csv");
-	while (myFile.good())
-	{
-		getline(myFile, nume, ',');
-		getline(myFile, prenume, ',');
-		Controlor C1(nume, prenume);
-		RecenApp::return_list_utilizatori(C1);
-		getline(myFile, nume, ',');
-		getline(myFile, prenume, ',');
-		Controlor C2(nume, prenume);
-		RecenApp::return_list_utilizatori(C2);
-	}
-	myFile.close();
-}
-
-
 void RecenApp::run()
 {
-	//initializare_utilizatori();
 	initUsers();
 }
-
-//dd
 void RecenApp::initUsers()
 {
 	cout << "Entry initUsers" << endl;
@@ -101,17 +46,23 @@ void RecenApp::initUsers()
 			case 'A':
 				user = new Agent(nume, prenume);
 				size = RecenApp::addUser(*user);
-				cout << "Agent size: " << size << endl;
+				RecenApp::initUsersIDs();
+				RecenApp::initUsersInitials('A');
+				cout << "Users size: " << size<<"; IDs size: "<<RecenApp::IDsSize() << endl;
 				break;
 			case 'C':
 				user = new Controlor(nume, prenume);
 				size = RecenApp::addUser(*user);
-				cout << "Controlor size: " << size << endl;
+				RecenApp::initUsersIDs();
+				RecenApp::initUsersInitials('C');
+				cout << "Users size: " << size << "; IDs size: " << RecenApp::IDsSize() << endl;
 				break;
 			case 'L':
 				user = new Locuitor(nume, prenume);
 				size = RecenApp::addUser(*user);
-				cout << "Locuitor size: " << size << endl;
+				RecenApp::initUsersIDs();
+				RecenApp::initUsersInitials('L');
+				cout << "Users size: " << size << "; IDs size: " << RecenApp::IDsSize() << endl;
 				break;
 			default:
 				cout << "bad type: " << tip << endl;
@@ -121,13 +72,40 @@ void RecenApp::initUsers()
 	myFile.close();
 
 }
+void RecenApp::initUsersIDs()
+{
+	cout << "Init Users IDs: ";
+	ID id;
+	//id.set_ID();
+	do
+	{
+		id.set_ID();                                    
+	} while (isIdUnique(id.get_ID()) == false);          
+	IDs.push_back(id.get_ID());
+	cout << id.get_ID()<<" "<<endl;
+}
+void RecenApp::initUsersInitials(char i)
+{
+	usersInitials.push_back(i);
+}
+size_t RecenApp::IDsSize()
+{
+	return IDs.size();
+}
+bool RecenApp::isIdUnique(int value)
+{
+	for(int i=0;i<IDs.size();i++)
+		if(IDs[i]==value)
+			return false;             //verifica daca id ul se mai gaseste undeva in vector
+	return true;
+}
 list<IUtilizator> RecenApp::getUsersList()
 {
-	return Utilizator;
+	return Users;
 }
 size_t RecenApp::addUser(IUtilizator &u)
 {
 	cout << "Entry addUser()" << endl;
-	Utilizator.push_back(u);
-	return Utilizator.size();
+	Users.push_back(u);
+	return Users.size();
 }

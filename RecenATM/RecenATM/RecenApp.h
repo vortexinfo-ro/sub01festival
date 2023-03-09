@@ -5,9 +5,11 @@
 #include<fstream>
 #include"Agent.h"
 #include"Locuitor.h"
+#include"ID.h"
 #include"Controlor.h"
 #include"IUtilizator.h"
 #include<list>
+#include<vector>
 using namespace std;
 class RecenApp
 {
@@ -16,13 +18,17 @@ private:
 public:
 	static RecenApp& getInstance();
 
-	list<IUtilizator> Utilizator;
-	list<IUtilizator> return_list_utilizatori(IUtilizator u);
-	void initializare_utilizatori();
+	list<IUtilizator> Users;
+	vector<int>	IDs;
+	vector<char> usersInitials;
 	
 	void run();
 	//dd
 	void initUsers();
+	void initUsersIDs();
+	void initUsersInitials(char i);
+	size_t IDsSize();
+	bool isIdUnique(int value);
 	size_t addUser(IUtilizator &u);
 	list<IUtilizator> getUsersList();
 };

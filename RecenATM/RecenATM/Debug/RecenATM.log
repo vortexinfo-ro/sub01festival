@@ -1,2 +1,6 @@
-﻿  RecenApp.cpp
-  RecenATM.vcxproj -> E:\scoala\Nicoleta Cucos\C++\sub01festival\RecenATM\Debug\RecenATM.exe
+﻿  Controlor.cpp
+  RecenApp.cpp
+D:\sub01festival\RecenATM\RecenATM\RecenApp.cpp(97,15): warning C4018: '<': signed/unsigned mismatch
+  Source.cpp
+  Generating Code...
+  RecenATM.vcxproj -> D:\sub01festival\RecenATM\Debug\RecenATM.exe

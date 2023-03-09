@@ -10,7 +10,7 @@ public:
 	Recenzor()
 	{
 		id.set_ID();
-		cout << id.get_ID() << endl;
+		cout <<"ID recenzor(Clasa Recenzor):"<< id.get_ID() << endl;
 	}
 	ID return_ID();
 };

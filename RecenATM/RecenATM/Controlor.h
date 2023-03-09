@@ -7,8 +7,9 @@ class Controlor :public Recenzor
 private:
 	string nume;
 	string prenume;
-	list<FormularCentralizator> lista_centralizatoare;
-	list<AdeverintaRaport> lista_rapoarte;
+	list<FormularCentralizator> listCentralizatoare;
+	list<AdeverintaRaport> listRpoarte;
+	list<IUtilizator> listAgenti;
 public:
 	Controlor() {}
 	Controlor(string nume, string prenume) :nume(nume), prenume(prenume) { }
