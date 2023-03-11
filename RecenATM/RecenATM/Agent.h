@@ -12,5 +12,6 @@ private:
 public:
 	Agent() {}
 	Agent(string nume, string prenume):nume(nume),prenume(prenume){}
+	char getType();
 };
 

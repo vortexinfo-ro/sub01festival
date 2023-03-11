@@ -17,5 +17,6 @@ public:
 	void set_nume(string nume);
 	string get_nume();
    
+	char getType();
 };
 

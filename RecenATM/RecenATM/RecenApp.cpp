@@ -70,7 +70,9 @@ void RecenApp::initUsers()
 		
 	}
 	myFile.close();
-
+	for (auto user : Users) {
+		cout << user.getType() << endl;
+	}
 }
 void RecenApp::initUsersIDs()
 {

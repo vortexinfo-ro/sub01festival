@@ -1,6 +1,8 @@
-﻿  Controlor.cpp
+﻿  Locuitor.cpp
   RecenApp.cpp
-D:\sub01festival\RecenATM\RecenATM\RecenApp.cpp(97,15): warning C4018: '<': signed/unsigned mismatch
+E:\scoala\Nicoleta Cucos\C++\sub01festival\RecenATM\RecenATM\RecenApp.cpp(74,16): error C2039: 'getType': is not a member of 'IUtilizator'
+E:\scoala\Nicoleta Cucos\C++\sub01festival\RecenATM\RecenATM\IUtilizator.h(4): message : see declaration of 'IUtilizator'
+E:\scoala\Nicoleta Cucos\C++\sub01festival\RecenATM\RecenATM\RecenApp.cpp(99,15): warning C4018: '<': signed/unsigned mismatch
+  Recenzor.cpp
   Source.cpp
   Generating Code...
-  RecenATM.vcxproj -> D:\sub01festival\RecenATM\Debug\RecenATM.exe

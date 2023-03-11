@@ -13,5 +13,6 @@ private:
 public:
 	Controlor() {}
 	Controlor(string nume, string prenume) :nume(nume), prenume(prenume) { }
+	char getType();
 };
 

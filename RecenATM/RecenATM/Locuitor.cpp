@@ -9,3 +9,6 @@ string Locuitor::get_nume()
 {
 	return this->nume;
 }
+char Locuitor::getType() {
+	return 'L';
+}

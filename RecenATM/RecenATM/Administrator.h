@@ -6,5 +6,6 @@ private:
 	
 public:
 	Administrator() {}
+	char getType();
 };
 

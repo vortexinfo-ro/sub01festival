@@ -3,6 +3,7 @@
 #include<string.h>
 class IUtilizator
 {
-
+	public:
+	//virtual char getType();
 };
 
