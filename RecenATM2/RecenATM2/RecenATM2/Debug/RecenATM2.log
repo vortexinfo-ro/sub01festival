@@ -1,9 +1,9 @@
-﻿  Agent.cpp
-  Controlor.cpp
-  Locuitor.cpp
-  RecenATM2.cpp
+﻿  RecenATM2.cpp
   RecenApp.cpp
-  Recenzor.cpp
-  User.cpp
+D:\sub01festival\RecenATM2\RecenATM2\RecenATM2\RecenApp.cpp(12,22): error C2352: 'ID::isUnique': illegal call of non-static member function
+D:\sub01festival\RecenATM2\RecenATM2\RecenATM2\ID.h(9): message : see declaration of 'ID::isUnique'
+D:\sub01festival\RecenATM2\RecenATM2\RecenATM2\RecenApp.cpp(13,22): error C2352: 'ID::isUnique': illegal call of non-static member function
+D:\sub01festival\RecenATM2\RecenATM2\RecenATM2\ID.h(9): message : see declaration of 'ID::isUnique'
+D:\sub01festival\RecenATM2\RecenATM2\RecenATM2\RecenApp.cpp(14,23): error C2352: 'ID::isUnique': illegal call of non-static member function
+D:\sub01festival\RecenATM2\RecenATM2\RecenATM2\ID.h(9): message : see declaration of 'ID::isUnique'
   Generating Code...
-  RecenATM2.vcxproj -> E:\scoala\Nicoleta Cucos\C++\sub01festival\RecenATM2\RecenATM2\Debug\RecenATM2.exe

@@ -9,6 +9,9 @@ RecenApp& RecenApp::getInstance()
 void RecenApp::run()
 {
 	initUsers();
+	cout << "3" << (ID::isUnique(3, lUsers) ? "unique" : "duplicate") << endl;
+	cout << "7" << (ID::isUnique(7, lUsers) ? "unique" : "duplicate") << endl;
+	cout << "15" << (ID::isUnique(15, lUsers) ? "unique" : "duplicate") << endl;
 }
 void RecenApp::initUsers()
 {

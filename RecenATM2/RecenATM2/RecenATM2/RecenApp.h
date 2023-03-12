@@ -10,6 +10,7 @@
 #include "Agent.h"
 #include"Controlor.h"
 #include"Locuitor.h"
+#include"ID.h"
 /*
 #include"ID.h"
 #include"IUtilizator.h"
