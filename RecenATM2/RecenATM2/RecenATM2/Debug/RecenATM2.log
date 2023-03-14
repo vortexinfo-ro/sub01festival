@@ -1,2 +1,13 @@
-﻿  Formular.cpp
+﻿  Agent.cpp
+  Controlor.cpp
+  Formular.cpp
+  FormularCentralizator.cpp
+  FormularRecenzare.cpp
+  ID.cpp
+  Locuitor.cpp
+  User.cpp
+  RecenApp.cpp
+  RecenATM2.cpp
+  Recenzor.cpp
+  Generating Code...
   RecenATM2.vcxproj -> D:\sub01festival\RecenATM2\RecenATM2\Debug\RecenATM2.exe

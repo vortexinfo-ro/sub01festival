@@ -17,6 +17,7 @@ bool ID::isUnique(int id, list<Formular*> lFormulare)
     {
         int formularId = pFormular->getId();
         if (id == formularId) return false;
+        pFormular++;
     }
     return true;
 }
