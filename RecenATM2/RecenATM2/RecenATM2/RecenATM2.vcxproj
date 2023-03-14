@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Agent.cpp" />
     <ClCompile Include="Controlor.cpp" />
+    <ClCompile Include="Formular.cpp" />
+    <ClCompile Include="FormularCentralizator.cpp" />
+    <ClCompile Include="FormularRecenzare.cpp" />
     <ClCompile Include="ID.cpp" />
     <ClCompile Include="Locuitor.cpp" />
     <ClCompile Include="User.cpp" />
@@ -151,6 +154,9 @@
   <ItemGroup>
     <ClInclude Include="Agent.h" />
     <ClInclude Include="Controlor.h" />
+    <ClInclude Include="Formular.h" />
+    <ClInclude Include="FormularCentralizator.h" />
+    <ClInclude Include="FormularRecenzare.h" />
     <ClInclude Include="ID.h" />
     <ClInclude Include="Locuitor.h" />
     <ClInclude Include="User.h" />

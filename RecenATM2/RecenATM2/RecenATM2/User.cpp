@@ -28,3 +28,8 @@ string User::getNume()
 {
 	return this->nume;
 }
+
+string User::getPrenume()
+{
+	return this->prenume;
+}

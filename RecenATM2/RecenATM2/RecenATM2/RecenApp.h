@@ -11,11 +11,9 @@
 #include"Controlor.h"
 #include"Locuitor.h"
 #include"ID.h"
-/*
-#include"ID.h"
-#include"IUtilizator.h"
-*/
-
+#include"Formular.h"
+#include"FormularRecenzare.h"
+#include"FormularCentralizator.h"
 using namespace std;
 class RecenApp
 {
@@ -25,18 +23,16 @@ public:
 	static RecenApp& getInstance();
 
 	list<User*> lUsers;
-	//list<IUtilizator> Users;
-	//vector<int>	IDs;
-	//vector<char> usersInitials;
+	list<Formular*> lFormulare;
 	
 	void run();
 	//dd
 	void initUsers();
-	void initUsersIDs();
-	void initUsersInitials(char i);
-	size_t IDsSize();
-	bool isIdUnique(int value);
+	//bool isIdUnique(int value);
 	size_t addUser(User &u);
-	//list<IUtilizator> getUsersList();
+
+	void initFormulare(list<User*> lUsers,list<Formular*>lFormulare);
+	size_t addFormular(Formular &f);
+
 };
 

@@ -11,7 +11,6 @@ private:
 protected:
 	int id;
 	string nume, prenume;
-
 public:
 	User(string, string);
 	void setId(int id);
@@ -19,5 +18,6 @@ public:
 	virtual char getType();
 	void setNume(string nume);
 	string getNume();
+	string getPrenume();
 };
 

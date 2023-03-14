@@ -9,9 +9,9 @@ RecenApp& RecenApp::getInstance()
 void RecenApp::run()
 {
 	initUsers();
-	cout << "3" << (ID::isUnique(3, lUsers) ? "unique" : "duplicate") << endl;
-	cout << "7" << (ID::isUnique(7, lUsers) ? "unique" : "duplicate") << endl;
-	cout << "15" << (ID::isUnique(15, lUsers) ? "unique" : "duplicate") << endl;
+	ID::setSrand();
+	initFormulare(lUsers,lFormulare);
+	//cout << "3" << (ID::isUnique(3, lUsers) ? "unique" : "duplicate") << endl;
 }
 void RecenApp::initUsers()
 {
@@ -22,6 +22,8 @@ void RecenApp::initUsers()
 	string prenume;
 	string sId;
 	string tip;
+
+	int rNumber;
 	
 	User* user = nullptr;
 	int i = 0;
@@ -42,82 +44,84 @@ void RecenApp::initUsers()
 		getline(myFile, prenume, ';');
 		getline(myFile, tip);
 
-		
-
 		if (i++ == 0) continue;
-		cout << "id: " << sId << " nume: " << nume << " prenume: " << prenume << " tip: " << tip << endl;
+		//cout << "id: " << sId << " nume: " << nume << " prenume: " << prenume << " tip: " << tip << endl;
+		do
+		{
+			rNumber = ID::generateRandom();
+		} while (ID::isUnique(rNumber, lUsers) == false);
+		//cout << rNumber << endl;
 		switch (tip[0]) {
 			case 'A':
 				user = new Agent(nume, prenume); // add user to lUsers list
 				size = RecenApp::addUser(*user);
-
-				cout << "Users size: " << size<<"; IDs size: "<<RecenApp::IDsSize() << endl;
+				user->setId(rNumber);
+				cout << "Users size: " << size<<endl;
 				break;
 			case 'C':
 				user = new Controlor(nume, prenume);
 				size = RecenApp::addUser(*user);
-
-				cout << "Users size: " << size << "; IDs size: " << RecenApp::IDsSize() << endl;
+				user->setId(rNumber);
+				cout << "Users size: " << size<< endl;
 				break;
 			case 'L':
 				user = new Locuitor(nume, prenume);
 				size = RecenApp::addUser(*user);
-
-				cout << "Users size: " << size << "; IDs size: " << RecenApp::IDsSize() << endl;
+				user->setId(rNumber);
+				cout << "Users size: " << size<< endl;
 				break;
 			default:
 				cout << "bad type: " << tip << endl;
 		}
-		
+		cout << "id: " <<user->getId() << " nume: " << nume << " prenume: " << prenume << " tip: " << tip << endl;	
 	}
 	
 	myFile.close();
 	for (auto pUser : lUsers) {
-		cout << pUser->getType() << " : " << typeid(*pUser).name() << " : " << pUser->getNume() << endl;
+		cout << pUser->getType() << " : " << typeid(*pUser).name() << " : " << pUser->getNume() <<" "<<pUser->getPrenume() << endl;
 	}
 	
 }
-void RecenApp::initUsersIDs()
-{
-	cout << "Init Users IDs: ";
-	/*
-	ID id;
-	//id.set_ID();
-	do
-	{
-		id.set_ID();                                    
-	} while (isIdUnique(id.get_ID()) == false);          
-	IDs.push_back(id.get_ID());
-	cout << id.get_ID()<<" "<<endl;
-	*/
-}
-void RecenApp::initUsersInitials(char i)
-{
-	//usersInitials.push_back(i);
-}
-size_t RecenApp::IDsSize()
-{
-	//return IDs.size();
-	return 0;
-}
-bool RecenApp::isIdUnique(int value)
-{
-	/*
-	for (size_t i = 0; i<IDs.size(); i++)
-		if(IDs[i]==value)
-			return false;             //verifica daca id ul se mai gaseste undeva in vector
-	return true;
-	*/
-	return 0;
-}
-/*
-list<IUtilizator> RecenApp::getUsersList()
-{
-	return Users;
-}*/
 size_t RecenApp::addUser(User &u)
 {
 	cout << "Entry addUser()" << endl;
 	lUsers.push_back(&u);
 	return lUsers.size();
+}
+
+void RecenApp::initFormulare(list<User*> lUsers, list<Formular*> lFormulare)
+{
+	int size = 0;
+	Formular* pFormular = nullptr;
+	int rNuberF;
+	for (auto pUser : lUsers)
+	{
+		if (pUser->getType() == 'A')
+		{
+			do
+			{
+				rNuberF = ID::generateRandom();
+			} while (ID::isUnique(rNuberF, lFormulare) == false);
+			pFormular = new FormularRecenzare(rNuberF);
+			size = RecenApp::addFormular(*pFormular);
+			cout << "Formulare size: " << size <<". Id: "<<pFormular->getId() << endl;
+		}
+		if (pUser->getType() == 'C')
+		{
+			do
+			{
+				rNuberF = ID::generateRandom();
+			} while (ID::isUnique(rNuberF, lFormulare) == false);
+			pFormular = new FormularCentralizator(rNuberF);
+			size = RecenApp::addFormular(*pFormular);
+			cout << "Formulare size: " << size << ". Id: " << pFormular->getId() << endl;
+		}
+	}
+}
+
+size_t RecenApp::addFormular(Formular &f)
+{
+	cout << "addFormular()" << endl;
+	lFormulare.push_back(&f);
+	return lFormulare.size();
 }
